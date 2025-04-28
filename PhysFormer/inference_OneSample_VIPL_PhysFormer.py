@@ -142,7 +142,7 @@ def train_test():
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="save quality using landmarkpose model")
     parser.add_argument('--gpu', type=int, default=2, help='the gpu id used for predict')
-    parser.add_argument('--input_data', type=str, default="content/rPPG-Speech/PhysFormer/scratch/project_2003204/") # /scratch/project_2003204/VIPL_frames_Matlab/
+    parser.add_argument('--input_data', type=str, default="/content/rPPG-Speech/PhysFormer/scratch/project_2003204") # /scratch/project_2003204/VIPL_frames_Matlab/
     parser.add_argument('--lr', type=float, default=0.0001, help='initial learning rate')  #default=0.0001
     parser.add_argument('--step_size', type=int, default=12, help='stepsize of optim.lr_scheduler.StepLR, how many epochs lr decays once')
     parser.add_argument('--gamma', type=float, default=0.1, help='gamma of optim.lr_scheduler.StepLR, decay of lr')
